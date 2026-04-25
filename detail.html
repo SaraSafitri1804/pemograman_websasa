@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Customer Detail - LoyaltyPro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link crossorigin="" rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Inter:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <!-- Page Header -->
+      <div class="page-header">
+        <div>
+          <nav class="breadcrumb">
+            <a href="index.html">Customers</a>
+            <span class="material-symbols-outlined">chevron_right</span>
+            <span class="breadcrumb-current">Customer Detail</span>
+          </nav>
+          <h1 class="page-title">Customer Profile</h1>
+        </div>
+        <button class="btn-outline">
+          <span class="material-symbols-outlined">edit</span>
+          Edit Profile
+        </button>
+      </div>
+
+      <!-- Bento Grid Top Row -->
+      <div class="bento-row">
+        <!-- Identity Card -->
+        <div class="card identity-card">
+          <div class="identity-bg-blob"></div>
+          <img
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAV6v2oMCcjWi5YUAzs7vx7IvQm9pSJJnBpuHf4xCznY2YI_5ExaX75znJEfiogvyu6eJ9YG7OFIOehjiwstDgQSOaHgMdw92AXkw7QWWkNZHxiwYv9hAkLH2qBzn7inhkxC3zvohn4gBcuVqQZZRhmIdUD88mHlVrhTd9rJ2jsMFVVul5sdKdEfYt_iHXklGT-V9AuKOhT0s9vD86eiDPEzvDmzHhInxmXAWMCrPtDdZxuwcrobE4GTpfeLhNWutEAAzNdAM2tYaE"
+            alt="Customer Avatar"
+            class="avatar-lg"
+          />
+          <div class="identity-info">
+            <div class="identity-name-row">
+              <h2 class="customer-name">Siti Rahmawati</h2>
+              <span class="badge-tier">Gold Tier</span>
+            </div>
+            <div class="identity-meta">
+              <span class="meta-item">
+                <span class="material-symbols-outlined">mail</span>
+                siti.rahmawati@example.com
+              </span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">
+                <span class="material-symbols-outlined">phone</span>
+                +62 812-3456-7890
+              </span>
+              <span class="meta-dot"></span>
+              <span class="meta-item">
+                <span class="material-symbols-outlined">calendar_today</span>
+                Member since Aug 2022
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Points Balance Card -->
+        <div class="card points-card">
+          <div class="points-glow"></div>
+          <div class="points-header">
+            <span class="points-label">Total Poin Tersedia</span>
+            <span
+              class="material-symbols-outlined points-icon"
+              style="font-variation-settings: &quot;FILL&quot; 1"
+              >account_balance_wallet</span
+            >
+          </div>
+          <div class="points-body">
+            <div class="points-number">24,500</div>
+            <p class="points-sub">1,500 poin menuju Platinum Tier</p>
+          </div>
+          <div class="points-progress-track">
+            <div class="points-progress-fill" style="width: 85%"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- History Tables Row -->
+      <div class="bento-row">
+        <!-- Riwayat Perolehan Poin -->
+        <div class="card table-card">
+          <div class="table-header">
+            <h3 class="table-title">
+              <span class="material-symbols-outlined icon-primary"
+                >add_circle</span
+              >
+              Riwayat Perolehan Poin
+            </h3>
+            <button class="btn-link">View All</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tanggal</th>
+                  <th>Aktivitas / Pembelian</th>
+                  <th class="text-right">Poin Didapat</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-date">12 Oct 2023</td>
+                  <td>
+                    <div class="cell-title">Pembelian INV-9982</div>
+                    <div class="cell-sub">Cabang Sudirman</div>
+                  </td>
+                  <td class="cell-point gain text-right">+450</td>
+                </tr>
+                <tr>
+                  <td class="cell-date">05 Oct 2023</td>
+                  <td>
+                    <div class="cell-title">Bonus Ulang Tahun</div>
+                    <div class="cell-sub">Promo Sistem</div>
+                  </td>
+                  <td class="cell-point gain text-right">+1,000</td>
+                </tr>
+                <tr>
+                  <td class="cell-date">28 Sep 2023</td>
+                  <td>
+                    <div class="cell-title">Pembelian INV-9102</div>
+                    <div class="cell-sub">Online Store</div>
+                  </td>
+                  <td class="cell-point gain text-right">+320</td>
+                </tr>
+                <tr>
+                  <td class="cell-date">15 Sep 2023</td>
+                  <td>
+                    <div class="cell-title">Referral Teman</div>
+                    <div class="cell-sub">Kode: SITI123</div>
+                  </td>
+                  <td class="cell-point gain text-right">+500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <!-- Riwayat Reward -->
+        <div class="card table-card">
+          <div class="table-header">
+            <h3 class="table-title">
+              <span class="material-symbols-outlined icon-secondary"
+                >redeem</span
+              >
+              Riwayat Reward
+            </h3>
+            <button class="btn-link">View All</button>
+          </div>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Tanggal Penukaran</th>
+                  <th>Nama Reward</th>
+                  <th class="text-right">Poin Digunakan</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="cell-date">01 Oct 2023</td>
+                  <td>
+                    <div class="cell-title">Voucher Kopi Rp 50.000</div>
+                    <div class="cell-status success">Berhasil</div>
+                  </td>
+                  <td class="cell-point redeem text-right">-500</td>
+                </tr>
+                <tr>
+                  <td class="cell-date">15 Aug 2023</td>
+                  <td>
+                    <div class="cell-title">Potongan Belanja 10%</div>
+                    <div class="cell-status success">Berhasil</div>
+                  </td>
+                  <td class="cell-point redeem text-right">-1,200</td>
+                </tr>
+                <tr>
+                  <td class="cell-date">10 Jun 2023</td>
+                  <td>
+                    <div class="cell-title">Merchandise Payung Eksklusif</div>
+                    <div class="cell-status success">Dikirim</div>
+                  </td>
+                  <td class="cell-point redeem text-right">-2,500</td>
+                </tr>
+                <tr>
+                  <td class="cell-date">02 Feb 2023</td>
+                  <td>
+                    <div class="cell-title">Tiket Nonton Bioskop x2</div>
+                    <div class="cell-status success">Digunakan</div>
+                  </td>
+                  <td class="cell-point redeem text-right">-1,500</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

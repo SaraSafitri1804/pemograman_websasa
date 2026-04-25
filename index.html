@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Customer - LoyaltyPro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Inter:wght@500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Page Header -->
+            <div class="page-header">
+                <div>
+                    <h2 class="page-title">Daftar Customer</h2>
+                    <p class="page-subtitle">Kelola dan lihat member loyalitas, poin, dan tier.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="btn btn-secondary">
+                        <span class="material-symbols-outlined">filter_list</span>
+                        Filter
+                    </button>
+                    <button class="btn btn-primary">
+                        <span class="material-symbols-outlined">add</span>
+                        Customer Baru
+                    </button>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">TOTAL MEMBER</span>
+                        <div class="stat-icon stat-icon-primary">
+                            <span class="material-symbols-outlined">group</span>
+                        </div>
+                    </div>
+                    <div class="stat-body">
+                        <span class="stat-number">12,450</span>
+                        <div class="stat-trend stat-trend-up">
+                            <span class="material-symbols-outlined">trending_up</span>
+                            <span>+142 minggu ini</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">POIN DITERBITKAN</span>
+                        <div class="stat-icon stat-icon-secondary">
+                            <span class="material-symbols-outlined">generating_tokens</span>
+                        </div>
+                    </div>
+                    <div class="stat-body">
+                        <span class="stat-number">8.2M</span>
+                        <div class="stat-info">
+                            <span>Total saldo belum ditukar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-header">
+                        <span class="stat-label">TIER GOLD</span>
+                        <div class="stat-icon stat-icon-gold">
+                            <span class="material-symbols-outlined">military_tech</span>
+                        </div>
+                    </div>
+                    <div class="stat-body">
+                        <span class="stat-number">845</span>
+                        <div class="stat-trend stat-trend-up">
+                            <span class="material-symbols-outlined">arrow_upward</span>
+                            <span>12 naik tier baru-baru ini</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Data Table -->
+            <div class="table-card">
+                <div class="table-wrapper">
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>ID Customer</th>
+                                <th>Nama Customer</th>
+                                <th class="text-right">Total Poin</th>
+                                <th class="text-center">Level</th>
+                                <th>Tanggal Transaksi Terakhir</th>
+                                <th class="text-center">Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-muted">CUST-89210</td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-primary">A</div>
+                                        <div>
+                                            <p class="customer-name">Budi Santoso</p>
+                                            <p class="customer-phone">0812-3456-7890</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-right text-bold">12,450</td>
+                                <td class="text-center">
+                                    <span class="badge badge-gold">Gold</span>
+                                </td>
+                                <td class="text-muted">12 Oct 2023, 14:30</td>
+                                <td class="text-center">
+                                    <a href="detail.html" class="btn-detail">Detail</a>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-muted">CUST-89211</td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-secondary">S</div>
+                                        <div>
+                                            <p class="customer-name">Siti Aminah</p>
+                                            <p class="customer-phone">0856-7890-1234</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-right text-bold">4,200</td>
+                                <td class="text-center">
+                                    <span class="badge badge-silver">Silver</span>
+                                </td>
+                                <td class="text-muted">10 Oct 2023, 09:15</td>
+                                <td class="text-center">
+                                    <button class="btn-detail">Detail</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-muted">CUST-89212</td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar-img">
+                                            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7Qc05q8g5rPR4xYIYxcv7wV3NMgZWX3ogc6P5TTRsjUiRYzqFgCQf0jeN_vbWqbICQmhoL4-_5AzHXN_QjszmXFsqkB91fBpEsE0YjVl2YD0hjJ03ShL3HqsfqI6i1teok8JveQEM3JSnvfEmmfPe7PTmn2nFQtjYwOrAAHqYT16vEO-I0exvyZvpZ6IbQ5Ns53RkAsduPTKmwdwYnZD2LDyTj9oiGlapScMhmoESnedZQ644ScSsgGIkcQMxZgytST4Ro2IC-ks" alt="Dewi Lestari">
+                                        </div>
+                                        <div>
+                                            <p class="customer-name">Dewi Lestari</p>
+                                            <p class="customer-phone">0811-2233-4455</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-right text-bold">950</td>
+                                <td class="text-center">
+                                    <span class="badge badge-bronze">Bronze</span>
+                                </td>
+                                <td class="text-muted">05 Oct 2023, 16:45</td>
+                                <td class="text-center">
+                                    <button class="btn-detail">Detail</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-muted">CUST-89213</td>
+                                <td>
+                                    <div class="customer-info">
+                                        <div class="avatar avatar-tertiary">R</div>
+                                        <div>
+                                            <p class="customer-name">Reza Rahadian</p>
+                                            <p class="customer-phone">0821-9988-7766</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-right text-bold">5,120</td>
+                                <td class="text-center">
+                                    <span class="badge badge-silver">Silver</span>
+                                </td>
+                                <td class="text-muted">01 Oct 2023, 11:20</td>
+                                <td class="text-center">
+                                    <button class="btn-detail">Detail</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination-section">
+                    <p class="pagination-info">
+                        Menampilkan <span class="text-bold">1</span> sampai <span class="text-bold">10</span> dari <span class="text-bold">12,450</span> hasil
+                    </p>
+                    <div class="pagination">
+                        <button class="page-btn" disabled>
+                            <span class="material-symbols-outlined">chevron_left</span>
+                        </button>
+                        <button class="page-btn active">1</button>
+                        <button class="page-btn">2</button>
+                        <button class="page-btn">3</button>
+                        <span class="pagination-dots">...</span>
+                        <button class="page-btn">1245</button>
+                        <button class="page-btn">
+                            <span class="material-symbols-outlined">chevron_right</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
