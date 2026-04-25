@@ -844,3 +844,76 @@ body {
     align-items: flex-start;
   }
 }
+.action-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* DETAIL BUTTON */
+.btn-detail {
+  padding: 6px 12px;
+  font-size: 13px;
+  border-radius: 8px;
+  background: #f1f5f9;
+  color: #334155;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+/* ICON BUTTON */
+.btn-icon {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f1f5f9;
+  color: #64748b;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-icon svg {
+  width: 16px;
+  height: 16px;
+}
+
+/* 🔥 HOVER EFFECT GLOBAL */
+.btn-detail:hover,
+.btn-icon:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+/* WARNA SPESIFIK */
+.btn-detail:hover {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.btn-edit:hover {
+  background: #dcfce7;
+  color: #16a34a;
+}
+
+.btn-delete:hover {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+
+/* Paksa isi cell ke kanan */
+.action-cell {
+  text-align: right;
+}
+
+/* Biar flex tetap tapi nempel kanan */
+.action-group {
+  display: flex;
+  justify-content: flex-end; /* 🔥 kunci utama */
+  align-items: center;
+  gap: 8px;
+}
