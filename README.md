@@ -1,4 +1,4 @@
-*Nama : Juwita Sara Safitri*
+Nama : Juwita Sara Safitri
 NIM : 24260006
 Kelas : TI B Semester 4
 
