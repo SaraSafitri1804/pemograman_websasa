@@ -1,0 +1,7 @@
+# Ignore all files in uploads
+*
+# But not this .gitignore file
+!.gitignore
+# Keep directory structure
+!reward/
+!reward/.gitkeep

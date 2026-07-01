@@ -1,0 +1,8 @@
+# Node modules
+node_modules/
+
+# Package lock
+package-lock.json
+
+# Output CSS (generated file)
+assets/css/output.css
